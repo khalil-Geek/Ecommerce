@@ -12,6 +12,11 @@
 		52192BFD225AD7E3000E4222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52192BFB225AD7E3000E4222 /* Main.storyboard */; };
 		52192BFF225AD7E3000E4222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52192BFE225AD7E3000E4222 /* Assets.xcassets */; };
 		52192C02225AD7E3000E4222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52192C00225AD7E3000E4222 /* LaunchScreen.storyboard */; };
+		52192C10225AD803000E4222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52192C0F225AD803000E4222 /* AppDelegate.swift */; };
+		52192C12225AD803000E4222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52192C11225AD803000E4222 /* ViewController.swift */; };
+		52192C15225AD803000E4222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52192C13225AD803000E4222 /* Main.storyboard */; };
+		52192C1A225AD804000E4222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52192C18225AD804000E4222 /* LaunchScreen.storyboard */; };
+		52192C20225AD837000E4222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52192BFE225AD7E3000E4222 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +27,23 @@
 		52192BFE225AD7E3000E4222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52192C01225AD7E3000E4222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52192C03225AD7E3000E4222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52192C0D225AD803000E4222 /* EdminEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdminEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52192C0F225AD803000E4222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52192C11225AD803000E4222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52192C14225AD803000E4222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52192C19225AD804000E4222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52192C1B225AD804000E4222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		52192BF1225AD7E3000E4222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52192C0A225AD803000E4222 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +56,9 @@
 		52192BEB225AD7E3000E4222 = {
 			isa = PBXGroup;
 			children = (
+				52192C1F225AD819000E4222 /* shared */,
 				52192BF6225AD7E3000E4222 /* Ecommerce */,
+				52192C0E225AD803000E4222 /* EdminEcommerce */,
 				52192BF5225AD7E3000E4222 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				52192BF4225AD7E3000E4222 /* Ecommerce.app */,
+				52192C0D225AD803000E4222 /* EdminEcommerce.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,11 +78,30 @@
 				52192BF7225AD7E3000E4222 /* AppDelegate.swift */,
 				52192BF9225AD7E3000E4222 /* ViewController.swift */,
 				52192BFB225AD7E3000E4222 /* Main.storyboard */,
-				52192BFE225AD7E3000E4222 /* Assets.xcassets */,
 				52192C00225AD7E3000E4222 /* LaunchScreen.storyboard */,
 				52192C03225AD7E3000E4222 /* Info.plist */,
 			);
 			path = Ecommerce;
+			sourceTree = "<group>";
+		};
+		52192C0E225AD803000E4222 /* EdminEcommerce */ = {
+			isa = PBXGroup;
+			children = (
+				52192C0F225AD803000E4222 /* AppDelegate.swift */,
+				52192C11225AD803000E4222 /* ViewController.swift */,
+				52192C13225AD803000E4222 /* Main.storyboard */,
+				52192C18225AD804000E4222 /* LaunchScreen.storyboard */,
+				52192C1B225AD804000E4222 /* Info.plist */,
+			);
+			path = EdminEcommerce;
+			sourceTree = "<group>";
+		};
+		52192C1F225AD819000E4222 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				52192BFE225AD7E3000E4222 /* Assets.xcassets */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +124,23 @@
 			productReference = 52192BF4225AD7E3000E4222 /* Ecommerce.app */;
 			productType = "com.apple.product-type.application";
 		};
+		52192C0C225AD803000E4222 /* EdminEcommerce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52192C1C225AD804000E4222 /* Build configuration list for PBXNativeTarget "EdminEcommerce" */;
+			buildPhases = (
+				52192C09225AD803000E4222 /* Sources */,
+				52192C0A225AD803000E4222 /* Frameworks */,
+				52192C0B225AD803000E4222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EdminEcommerce;
+			productName = EdminEcommerce;
+			productReference = 52192C0D225AD803000E4222 /* EdminEcommerce.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +152,9 @@
 				ORGANIZATIONNAME = "macbook pro";
 				TargetAttributes = {
 					52192BF3225AD7E3000E4222 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					52192C0C225AD803000E4222 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -113,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				52192BF3225AD7E3000E4222 /* Ecommerce */,
+				52192C0C225AD803000E4222 /* EdminEcommerce */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +189,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52192C0B225AD803000E4222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52192C1A225AD804000E4222 /* LaunchScreen.storyboard in Resources */,
+				52192C20225AD837000E4222 /* Assets.xcassets in Resources */,
+				52192C15225AD803000E4222 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,6 +208,15 @@
 			files = (
 				52192BFA225AD7E3000E4222 /* ViewController.swift in Sources */,
 				52192BF8225AD7E3000E4222 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52192C09225AD803000E4222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52192C12225AD803000E4222 /* ViewController.swift in Sources */,
+				52192C10225AD803000E4222 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +235,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				52192C01225AD7E3000E4222 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		52192C13225AD803000E4222 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52192C14225AD803000E4222 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52192C18225AD804000E4222 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52192C19225AD804000E4222 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -314,6 +410,42 @@
 			};
 			name = Release;
 		};
+		52192C1D225AD804000E4222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74ZD25P7P2;
+				INFOPLIST_FILE = EdminEcommerce/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jways.EdminEcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52192C1E225AD804000E4222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74ZD25P7P2;
+				INFOPLIST_FILE = EdminEcommerce/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jways.EdminEcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +463,15 @@
 			buildConfigurations = (
 				52192C07225AD7E3000E4222 /* Debug */,
 				52192C08225AD7E3000E4222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52192C1C225AD804000E4222 /* Build configuration list for PBXNativeTarget "EdminEcommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52192C1D225AD804000E4222 /* Debug */,
+				52192C1E225AD804000E4222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
